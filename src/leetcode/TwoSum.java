@@ -1,7 +1,10 @@
 package leetcode;
 
+import java.util.HashMap;
+
 public class TwoSum {
     public static int[] execute(int[] nums, int target) {
+        HashMap<Integer, Integer> hash = new HashMap<>();
         int first = -1;
         int second = -1;
         for(int i = 0; i<nums.length-1; i++) {
